@@ -125,7 +125,7 @@ function sendSlack(slackURL, slackMessage, detailViewURL, alarmBotVersion) {
     };
 
     try {
-        UrlFetchApp.fetch(slackURL1, option);                                                                                                                                           // Slack에 보내기기
+        UrlFetchApp.fetch(slackURL, option);                                                                                                                                           // Slack에 보내기기
         Logger.log('꼼꼼한 친구들 Perfact Care 고객 상담 / 견적 요청 정보를 Slack에 성공적으로 보냈습니다.');
 
     } catch(err) {
@@ -163,7 +163,7 @@ function sendMail(activeSheet,row, firstCol, email, emailTest, name, date) {
     }
 
     try {
-        GmailApp.sendEmail(email1, emailSubject, emailBody);
+        GmailApp.sendEmail(email, emailSubject, emailBody);
         activeSheet.getRange(row, firstCol + 16).setValue('발송');                                                                                                                    // Mail을 보내게 되면 16번째 스프레드 시트 열에 '발송'이라고 기재
         Logger.log('꼼꼼한 친구들 상담 / 견적 요청 고객에게 Email이 발송 되었어요.');
 
