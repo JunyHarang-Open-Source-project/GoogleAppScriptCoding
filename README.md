@@ -18,12 +18,3 @@
 https://junyharang.tistory.com/351
 
 <br><br><br>
-
-### 🗂 목차
-
----
-
-#### ⚙️ 환경 구성
-
-**●[\[BackEnd\]\[Maven-PJ\] 개발자 커뮤니티 서비스 - 환경 구성](https://junyharang.tistory.com/209)**
-<br><br>
